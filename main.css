@@ -1,0 +1,49 @@
+body {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+textarea {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    display: block;
+}
+textarea:read-only {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px 0;
+    padding: 2px 15px;
+}
+button:hover {
+    background: #bbb;
+}
+
+#status {
+    display: inline-block;
+    margin: 2px 0;
+    font-size: 12px;
+}
+#status::before {
+    content: '[ status: ';
+    font-weight: bold;
+}
+#status::after {
+    content: ' ]';
+    font-weight: bold;
+}

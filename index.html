@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>WMS to Open Maps Layers</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <label for="xml-input">Enter XML input:</label>
+        <textarea name="xml-input" id="xml-input" cols="30" rows="10" autofocus></textarea>
+
+        <button id="convert">Convert</button>
+
+        <span id="status">Error loading. Is JavaScript enabled?</span>
+
+        <textarea name="json-output" id="json-output" cols="30" rows="10" readonly></textarea>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
